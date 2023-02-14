@@ -89,7 +89,7 @@ function averageGrade(grades) {
     let average = 0
 
     for (let grade of grades) {
-        average = average + grade
+        average += grade;
     }
     return average / grades.length
 }
