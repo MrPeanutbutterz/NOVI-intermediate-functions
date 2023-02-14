@@ -138,7 +138,7 @@ als de for loop klaar is return ik de variable
 
 function highestGrade(grades) {
 
-    let highestGrade = 0
+    let highestGrade = grades[0];
 
     for (let grade of grades) {
         if (grade > highestGrade) {
