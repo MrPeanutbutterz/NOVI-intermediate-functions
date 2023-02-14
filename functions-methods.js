@@ -58,16 +58,7 @@ console.log(typeOfEmail("a.wiersma@outlook.com"))
 
 function checkEmailValidity(email) {
 
-    if(email.includes("@") && email.includes(".")) {
-        if (email.indexOf("@") < email.indexOf(".")) {
-            return true
-
-        } else {
-            return false
-        }
-    } else {
-        return false
-    }
+    return email.includes("@") && email.includes(".") && email.indexOf("@") < email.indexOf(".");
 }
 
 console.log(checkEmailValidity("n.eeken@novi.nl"))
